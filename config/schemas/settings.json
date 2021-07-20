@@ -17,7 +17,7 @@
 			"type" : "object",
 			"default": {},
 			"additionalProperties" : false,
-			"required" : [ "playerName", "showfps", "music", "sound", "encoding", "swipe", "saveRandomMaps", "saveFrequency" ],
+			"required" : [ "playerName", "showfps", "classicAutosave", "music", "sound", "encoding", "swipe", "saveRandomMaps", "saveFrequency" ],
 			"properties" : {
 				"playerName" : {
 					"type":"string",
@@ -27,6 +27,10 @@
 					"type" : "boolean",
 					"default" : false
 				},
+                                "classicAutosave" : {
+                                        "type" :  "boolean",
+                                        "default" : false
+                                },
 				"music" : {
 					"type" : "number",
 					"default" : 88

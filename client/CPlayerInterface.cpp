@@ -183,6 +183,10 @@ void CPlayerInterface::yourTurn()
 			}
 			firstCall = 0;
 		}
+		else if (settings["general"]["classicAutosave"].Bool())
+		{
+                	LOCPLINT->cb->save("Saves/Autosave");
+		}
 		else if(frequency > 0 && cb->getDate() % frequency == 0)
 		{
 			LOCPLINT->cb->save("Saves/" + prefix + "Autosave_" + boost::lexical_cast<std::string>(autosaveCount++ + 1));

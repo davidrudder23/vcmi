@@ -44,7 +44,7 @@ LuaContext::LuaContext(const Script * source, const Environment * env_)
 		{LUA_TABLIBNAME, luaopen_table},
 		{LUA_STRLIBNAME, luaopen_string},
 		{LUA_MATHLIBNAME, luaopen_math},
-		{LUA_BITLIBNAME, luaopen_bit}
+		{LUA_BITLIBNAME, luaopen_bit32}
 	};
 
 	for(const luaL_Reg & lib : STD_LIBS)
